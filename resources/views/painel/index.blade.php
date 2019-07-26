@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Admin - Template</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,9 +17,10 @@
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
+
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -28,14 +29,14 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fas fa-tools"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Admin 2.0</div>
       </a>
 
       <!-- Divider -->
@@ -45,7 +46,7 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Painel</span></a>
       </li>
 
       <!-- Divider -->
@@ -129,6 +130,32 @@
               <div class="topbar-divider d-none d-sm-block"></div>
 
               <!-- Nav Item - User Information -->
+              <li class="icons mt-4">
+                    <a href="javascript:void(0)">
+                    <i class="far fa-bell"></i>
+
+                    </a>
+                    <div class="drop-down animated bounceInDown">
+                        <div class="dropdown-content-heading">
+                        <span class="pull-left"></span>
+                        <a href="javascript:void()" class="pull-right text-white">View All</a>
+                        <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icons mt-4">
+                    <a href="javascript:void(0)">
+                    <i class="far fa-comment "></i>
+
+                    </a>
+                    <div class="drop-down animated bounceInDown">
+                        <div class="dropdown-content-heading">
+                        <span class="pull-left"></span>
+                        <a href="javascript:void()" class="pull-right text-white">View All</a>
+                        <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
@@ -263,7 +290,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; Media Solution Digital 2019</span>
           </div>
         </div>
       </footer>

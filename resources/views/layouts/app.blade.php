@@ -17,7 +17,26 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+            <link rel="stylesheet" href="{{asset('css/style.css')}}">
+            <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+
+            {{-- <link href="{{asset('css/font-icons.css')}}" rel="stylesheet" type="text/css" /> --}}
+            <link href="{{asset('css/recicla-guide.css')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('css/dropdown.min.css')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('css/stylesa361.css?ver=2.3')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('css/beta-popup.css')}}" rel="stylesheet" type="text/css" />
+
+
+
+            <!-- <script src="js/jquery.js"></script> -->
+            <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
+            <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+            <script src="{{asset('js/bootstrap.min.js')}}"></script>
+            <script src="{{asset('js/recicla.min.js')}}"></script>
+
 </head>
 <body>
     <div id="app">
@@ -50,6 +69,9 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
+                                @if(Auth::user()->img != null)
+                                    <img src="{{Auth::user()->img}}" width="30px">
+                                @endif
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
